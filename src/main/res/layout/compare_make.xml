@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="#ff3f3f43"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:stretchColumns="*"
+
+    android:layout_gravity="top"
+
+
+    >
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BANK 1"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:id="@+id/textView9" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BANK 2"
+                android:layout_weight="1"
+                android:id="@+id/textview1"
+                android:textColor="#ffffff"
+                android:gravity="left"
+                 />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Car Price (RM)"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:id="@+id/textView"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Car Price (RM)"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:id="@+id/textView2"
+
+                />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:focusable="true"
+                android:id="@+id/caredit1" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:focusableInTouchMode="true"
+                android:id="@+id/caredit2" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Down Payment (RM)"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:id="@+id/textView3"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Down Payment (RM)"
+                android:id="@+id/textView4"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                 />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:id="@+id/downedit1" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:id="@+id/downedit2" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Loan Period (Months)"
+                android:layout_weight="1"
+                android:id="@+id/textView5"
+                android:textColor="#ffffff"
+                 />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Loan Period (Months)"
+                android:id="@+id/textView6"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                 />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:id="@+id/loanedit1" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:id="@+id/loanedit2" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Interest Rate (%)"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:id="@+id/textView7"
+                 />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Interest Rate (%)"
+                android:id="@+id/textView8"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                 />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+
+                android:id="@+id/interestedit1" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:id="@+id/interestedit2" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ff5aff9c"
+
+
+
+                android:id="@+id/monthlypayment1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ff5aff9c"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/monthlypayment2" />
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1"
+            android:textColor="#ff4fa5ff"
+            android:gravity="center"
+
+            android:id="@+id/yearlyinterest1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ff4fa5ff"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/yearlyinterest2" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1"
+            android:textColor="#ffff74ad"
+            android:gravity="center"
+            android:id="@+id/totalinterest1"
+            android:layout_gravity="top" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#ffff74ad"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/totalinterest2" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_weight="1"
+            android:textColor="#fff4ff46"
+            android:gravity="center"
+            android:id="@+id/gsttopay1"
+            android:layout_gravity="top" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#fff4ff46"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/gsttopay2" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Calculate"
+
+            android:textColor="#ffff9e27"
+            android:id="@+id/calculate1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="Calculate"
+
+            android:textColor="#ffff9e27"
+
+            android:id="@+id/calculate2" />
+
+
+
+
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="New Calculation"
+            android:textColor="#ffff9e27"
+            android:visibility="invisible"
+
+            android:id="@+id/newcalc1"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="New Calculation"
+            android:textColor="#ffff9e27"
+            android:visibility="invisible"
+
+            android:id="@+id/newcalc2"
+
+            />
+
+
+
+
+
+
+    </TableRow>
+
+    <!--
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:paddingTop="30dp"
+            android:textColor="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_span="2"
+
+            android:text="\u00a9 2015 Car Loan Calculator | "
+            android:id="@+id/textView12"
+
+            />
+    </TableRow>
+
+    -->
+
+
+</TableLayout>
+
+
+</ScrollView>
+

@@ -1,0 +1,342 @@
+<!--
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    -->
+
+
+<ScrollView
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:layout_gravity="top"
+    android:paddingTop="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9f9f9f"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:gravity="top|center"
+  >
+
+  -->
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="*"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Car Price (RM)"
+                android:id="@+id/carprice"
+                android:focusable="true"
+
+                android:textColor="#ffffff"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/caredit"
+
+                android:inputType="number"
+                android:textColor="#ffffff"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Down Payment (RM)"
+                android:id="@+id/downpayment"
+                android:paddingTop="20dp"
+
+                android:textColor="#ffffff"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/downedit"
+
+                android:inputType="number"
+                android:textColor="#ffffff"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Loan Period (Months)"
+                android:paddingTop="20dp"
+                android:id="@+id/loanperiod"
+
+                android:textColor="#ffffff"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loanedit"
+
+                android:inputType="number"
+                android:textColor="#ffffff"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Interest Rate (%)"
+                android:paddingTop="20dp"
+                android:id="@+id/interestrate"
+
+                android:textColor="#ffffff"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/interestedit"
+
+                android:inputType="numberDecimal"
+                android:textColor="#ffffff"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:paddingTop="5dp"
+                android:textColor="#ffff9e27"
+                android:id="@+id/calculate"
+
+
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Your Monthly Payment"
+                android:id="@+id/monthlypayment"
+                android:gravity="center"
+                android:textColor="#ff5aff9c"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Yearly Interest"
+                android:paddingTop="5dp"
+                android:id="@+id/yearlyinteresttv"
+                android:textColor="#ff4fa5ff"
+                android:visibility="invisible"
+                android:gravity="center"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="5dp"
+                android:id="@+id/yearlyinterest1"
+                android:textColor="#ff4fa5ff"
+                android:visibility="invisible"
+
+                android:gravity="center"
+                 />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Total Interest"
+                android:paddingTop="5dp"
+                android:id="@+id/totalinteresttv"
+                android:textColor="#ffff74ad"
+                android:visibility="invisible"
+                android:gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="5dp"
+                android:id="@+id/totalinterest"
+                android:textColor="#ffff74ad"
+                android:gravity="center"
+                android:visibility="invisible"
+                 />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingTop="5dp"
+                android:id="@+id/gsttopay"
+                android:textColor="#fff4ff46"
+                android:gravity="center"
+                android:visibility="invisible"
+                />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="New Calculation"
+                android:id="@+id/newcalc"
+                android:visibility="gone"
+                android:textColor="#fffbffff"
+                android:paddingTop="10dp"
+                 />
+        </TableRow>
+
+
+        <!--
+        <TableRow android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+            <TextView
+
+
+                android:textColor="#ffffff"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="\u00a9 2015 Car Loan Calculator |   "
+                android:id="@+id/textView11"
+                android:layout_alignParentBottom="true" />
+
+        </TableRow>
+
+        -->
+
+
+
+    </TableLayout>
+
+
+
+
+
+<!--
+</RelativeLayout>
+-->
+
+
+
+</ScrollView>
+
+<!--
+</LinearLayout>
+-->
